@@ -8,14 +8,14 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : TikTok
+tagline: tagline
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : "Liu Yuan"
+  email : liuyuanfox@gmail.com
+  github : comeonfox
+  twitter : comeonfox
+  feedburner : comeonfox
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +25,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://comeonfox.github.io
 
 gems: ["jekyll-sitemap"]
 
@@ -67,6 +67,8 @@ JB :
   #   /assets
   #
   ASSET_PATH : false
+  # set for local use, because BASE_PATH is forcely set to /
+  # ASSET_PATH: http://localhost:4000/assets/themes/twitter/
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.

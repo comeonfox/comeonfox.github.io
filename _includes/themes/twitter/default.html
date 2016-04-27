@@ -12,9 +12,7 @@
     <![endif]-->
 
     <!-- Le styles -->
-    <!--<link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet"-->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="{{ ASSET_PATH }}/css/1.4.0/bootstrap.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le fav and touch icons -->
@@ -31,14 +29,12 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <nav class="navbar navbar-fixed-top navbar-inverse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item"><a class="nav-link brand" href="{{ HOME_PATH }}">{{ site.title }}</a></li>
-                {% assign pages_list = site.pages %}
-                {% assign group = 'navigation' %}
-                {% include JB/pages_list %}
-            </ul>
-          </nav>
+          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <ul class="nav">
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
+          </ul>
         </div>
       </div>
     </div>
@@ -59,8 +55,5 @@
     </div> <!-- /container -->
 
     {% include JB/analytics %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
